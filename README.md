@@ -46,7 +46,7 @@ Bu proje; lojistik, rota planlama, akıllı şehirler, atık yönetimi ve dağı
 
 ---
 
-## 🗺️ Görselleştirme
+## Görselleştirme
 
 ### En İyi Rota Haritası
 - Okullar **kırmızı noktalar** ile gösterilir  
@@ -62,7 +62,7 @@ Bu proje; lojistik, rota planlama, akıllı şehirler, atık yönetimi ve dağı
 
 ---
 
-## 🌐 Mesafe Hesaplama (OSRM)
+## Mesafe Hesaplama (OSRM)
 
 Okullar arası sürüş mesafeleri, **OSRM (Open Source Routing Machine) API** kullanılarak hesaplanır.
 
@@ -72,7 +72,7 @@ Okullar arası sürüş mesafeleri, **OSRM (Open Source Routing Machine) API** k
 
 ---
 
-## 🖥️ Streamlit Kullanıcı Arayüzü
+## Streamlit Kullanıcı Arayüzü
 
 Arayüz üzerinden kullanıcılar:
 - Karınca sayısını belirleyebilir  
@@ -89,7 +89,7 @@ Arayüz üzerinden kullanıcılar:
 
 ---
 
-## 📊 Üretilen Çıktılar
+## Üretilen Çıktılar
 
 - En kısa atık toplama rotası  
 - Toplam mesafe (km)  
@@ -97,8 +97,13 @@ Arayüz üzerinden kullanıcılar:
 - Yakınsama grafiği  
 
 ---
+## 🗺️ En İyi Rota Haritası
+![En İyi Rota](figure/Screenshot 2025-12-23 233524.png)
 
-## 🚀 Çalıştırma Talimatları
+## 📈 Yakınsama Grafiği
+![Yakınsama Grafiği](figure/convergence.png)
+
+## Çalıştırma Talimatları
 
 ```bash
 pip install -r requirements.txt
