@@ -98,7 +98,7 @@ Arayüz üzerinden kullanıcılar:
 
 ---
 ## 🗺️ En İyi Rota Haritası
-![En İyi Rota](figure/Screenshot 2025-12-23 233524.png)
+![En İyi Rota](Screenshot 2025-12-23 233524.png)
 
 ## 📈 Yakınsama Grafiği
 ![Yakınsama Grafiği](figure/convergence.png)
