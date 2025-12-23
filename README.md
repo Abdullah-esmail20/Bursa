@@ -97,11 +97,13 @@ Arayüz üzerinden kullanıcılar:
 - Yakınsama grafiği  
 
 ---
-## 🗺️ En İyi Rota Haritası
+##  En İyi Rota Haritası_1
 ![En İyi Rota](https://github.com/Abdullah-esmail20/Bursa/blob/c3fb42702b1036a03223c9a937e2507dd7fdd6b8/rote2.png)
 
+##  En İyi Rota Haritası_2
+![En İyi Rota](https://github.com/Abdullah-esmail20/Bursa/blob/c3fb42702b1036a03223c9a937e2507dd7fdd6b8/rote1.png)
 ## 📈 Yakınsama Grafiği
-![Yakınsama Grafiği](figure/convergence.png)
+![Yakınsama Grafiği_1](https://github.com/Abdullah-esmail20/Bursa/blob/c3fb42702b1036a03223c9a937e2507dd7fdd6b8/Yak%C4%B1nsama.png)
 
 
 ## Çalıştırma Talimatları
