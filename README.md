@@ -98,7 +98,7 @@ Arayüz üzerinden kullanıcılar:
 
 ---
 ## 🗺️ En İyi Rota Haritası
-![En İyi Rota](figure/rote.png)
+![En İyi Rota](https://github.com/Abdullah-esmail20/Bursa/blob/c3fb42702b1036a03223c9a937e2507dd7fdd6b8/rote2.png)
 
 ## 📈 Yakınsama Grafiği
 ![Yakınsama Grafiği](figure/convergence.png)
