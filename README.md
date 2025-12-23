@@ -1,4 +1,4 @@
-# Bursa
+# Bursa Belediyesine bağlı geri dönüşüm aracı, haftalık olarak 12 farklı liseden atık toplamaktadır. Yakıt ve zaman kazancı için en verimli rotayı belirleyiniz
 # ACO – Bursa Rota Optimizasyonu (Senaryo 3)
 **Bursa Geri Dönüşüm Aracı için Karınca Kolonisi Optimizasyonu (Ant Colony Optimization – ACO) ile en verimli rota planlama**
 
