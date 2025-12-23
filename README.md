@@ -105,7 +105,41 @@ Arayüz üzerinden kullanıcılar:
 ## 📈 Yakınsama Grafiği
 ![Yakınsama Grafiği_1](https://github.com/Abdullah-esmail20/Bursa/blob/c3fb42702b1036a03223c9a937e2507dd7fdd6b8/Yak%C4%B1nsama.png)
 
+## 🧩 Koddan Kısa Bir Parça Açıklaması
 
+Aşağıdaki kod parçası, Karınca Kolonisi Algoritması’nın (ACO) projede nasıl çalıştığını kısaca göstermektedir:
+
+```python
+koordinatlar = [(s['lat'], s['lon']) for s in SCHOOLS]
+mesafe_matrisi = get_distance_matrix(koordinatlar)
+OSRM API kullanarak okullar arasındaki sürüş mesafelerini hesaplar.
+feromonlar = np.ones((nokta_sayisi, nokta_sayisi))
+Tüm yollar için başlangıç feromon değerlerini eşit olarak tanımlar.
+feromonlar[yol[s]][yol[s+1]] += Q / mesafe
+Daha kısa rotalara daha fazla feromon ekleyerek bu yolları güçlendirir.
+import streamlit as st
+from core.ant_algorithm import run_aco
+from visual.plotting import plot_route, plot_convergence
+Kullanıcı Arayüzü ve Parametre Yönetimi (main.py)
+Bu kod bloğu, projenin Streamlit tabanlı etkileşimli kullanıcı arayüzünü (UI) yapılandırır:
+Uygulama Başlığı ve Tanıtım: st.title ve st.markdown komutları, Bursa okul atık toplama projesinin adını ve kullanılan algoritmayı (ACO) ana ekranda kullanıcıya sunar.
+Kenar Çubuğu (Sidebar): Algoritma ayarlarını ana içerikten ayırmak için st.sidebar kullanılarak düzenli bir kontrol paneli oluşturulmuştur.
+Dinamik Parametre Girişi: Kullanıcının algoritma performansını test edebilmesi için aşağıdaki parametreler sürgüler (slider) aracılığıyla dinamik olarak alınmaktadır:
+Karınca Sayısı: Kolonideki aktif karınca miktarını belirler.
+İterasyon Sayısı: Algoritmanın kaç döngü boyunca çalışacağını ayarlar.
+Buharlaşma Oranı (Rho): Feromon izlerinin zamanla yok olma hızını belirleyerek algoritmanın keşif (exploration) yeteneğini kontrol eder.
+
+# Uygulama Başlığı [cite: 131]
+st.title("Bursa Okul Atık Toplama Rotası Optimizasyonu")
+st.markdown("### Karınca Kolonisi Algoritması (ACO) ile En Kısa Yol Analizi")
+
+# Sidebar - Algoritma Parametreleri [cite: 130, 140]
+st.sidebar.header("Algoritma Ayarları")
+
+# Kullanıcıdan parametre alma [cite: 140]
+ant_count = st.sidebar.slider("Karınca Sayısı", min_value=10, max_value=50, value=20)
+iterations = st.sidebar.slider("İterasyon Sayısı", min_value=50, max_value=500, value=100)
+evaporation_rate = st.sidebar.slider("Buharlaşma Oranı (Rho)", 0.1, 0.9, 0.5)
 ## Çalıştırma Talimatları
 
 ```bash
