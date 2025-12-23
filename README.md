@@ -44,6 +44,66 @@ Bu proje; lojistik, rota planlama, akıllı şehirler, atık yönetimi ve dağı
 
 ---
 
+---
+
+## 🗺️ Görselleştirme
+
+### En İyi Rota Haritası
+- Okullar **kırmızı noktalar** ile gösterilir  
+- Optimum rota **mavi kesikli çizgi** ile belirtilir  
+- Okullar ziyaret sırasına göre numaralandırılır  
+- Çıktı dosyası: `figure/rota.png`
+
+### Yakınsama Grafiği
+- X ekseni: İterasyon sayısı  
+- Y ekseni: En kısa mesafe (km)  
+- Algoritmanın zamanla nasıl kararlı hale geldiğini gösterir  
+- Çıktı dosyası: `figure/convergence.png`
+
+---
+
+## 🌐 Mesafe Hesaplama (OSRM)
+
+Okullar arası sürüş mesafeleri, **OSRM (Open Source Routing Machine) API** kullanılarak hesaplanır.
+
+- Gerçek yol mesafeleri kullanılır  
+- Mesafeler kilometre cinsine dönüştürülür  
+- API hatası durumunda alternatif mesafe hesaplama yöntemleri uygulanabilir  
+
+---
+
+## 🖥️ Streamlit Kullanıcı Arayüzü
+
+Arayüz üzerinden kullanıcılar:
+- Karınca sayısını belirleyebilir  
+- İterasyon sayısını ayarlayabilir  
+- Buharlaşma oranını (Rho) değiştirebilir  
+- Tek tıkla optimizasyonu başlatabilir  
+- Rota haritası ve yakınsama grafiğini inceleyebilir  
+
+### Kullanım Adımları:
+1. Parametreleri ayarla  
+2. **“Rota Optimizasyonunu Başlat”** butonuna tıkla  
+3. En kısa mesafeyi görüntüle  
+4. Grafikler üzerinden sonuçları analiz et  
+
+---
+
+## 📊 Üretilen Çıktılar
+
+- En kısa atık toplama rotası  
+- Toplam mesafe (km)  
+- Rota görselleştirmesi  
+- Yakınsama grafiği  
+
+---
+
+## 🚀 Çalıştırma Talimatları
+
+```bash
+pip install -r requirements.txt
+streamlit run main.py
+
 ## Kullanılan Teknolojiler
 - Python
 - Streamlit
@@ -58,14 +118,13 @@ Bu proje; lojistik, rota planlama, akıllı şehirler, atık yönetimi ve dağı
 Kodunuz bu dosyaları bekler:
 
 ```text
-.
-├─ main.py                # Streamlit UI (parametreler, sonuçlar, harita, grafik)
-├─ maps.py                # Google Maps: geocode + distance matrix
-├─ aco.py                 # ACO algoritması (run_aco fonksiyonu)
-├─ schools.py             # 12 nokta listesi (SCHOOLS)
-├─ requirements.txt
-└─ .streamlit/
-   └─ secrets.toml        # GOOGLE_MAPS_API_KEY (GitHub'a yükleme!)
+aco_bursa_waste/
+├── core/               # ACO Algoritması ve Mesafe Hesaplamaları [cite: 147]
+├── data/               # Okul Koordinat Verileri (12 Lise) [cite: 147]
+├── visual/             # Harita ve Grafik Çizim Fonksiyonları [cite: 147]
+├── figure/             # Kaydedilen Sonuç Grafikleri [cite: 147]
+├── main.py             # Streamlit Ana Uygulama Dosyası [cite: 147]
+└── README.md           # Proje Tanıtım Dosyası [cite: 147]
 
 
 
