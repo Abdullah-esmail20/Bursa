@@ -1,0 +1,7 @@
+```text
+streamlit
+numpy
+requests
+matplotlib
+networkx
+python-dotenv
